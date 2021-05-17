@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
+open-weather:
+  #Moved to environment variable
+  #app-id: b7a26b0e8c943b8cf4f625cac88d8db2
+  api-url: http://api.openweathermap.org/data/2.5
